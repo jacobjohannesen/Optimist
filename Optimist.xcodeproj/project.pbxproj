@@ -18,6 +18,14 @@
 		161898D51A7CA8500084F2CE /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D41A7CA8500084F2CE /* MoodView.swift */; };
 		161898D71A7D637F0084F2CE /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D61A7D637F0084F2CE /* HexColor.swift */; };
 		161898D91A7D6B530084F2CE /* SunBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D81A7D6B530084F2CE /* SunBar.swift */; };
+		16CE2E391A7D85D900A6E036 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CE2E381A7D85D800A6E036 /* WatchKit.framework */; };
+		16CE2E3F1A7D85D900A6E036 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE2E3E1A7D85D900A6E036 /* InterfaceController.swift */; };
+		16CE2E411A7D85D900A6E036 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE2E401A7D85D900A6E036 /* NotificationController.swift */; };
+		16CE2E431A7D85D900A6E036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CE2E421A7D85D900A6E036 /* Images.xcassets */; };
+		16CE2E471A7D85D900A6E036 /* Optimist Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 16CE2E461A7D85D900A6E036 /* Optimist Watch App.app */; };
+		16CE2E4E1A7D85D900A6E036 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CE2E4D1A7D85D900A6E036 /* Interface.storyboard */; };
+		16CE2E501A7D85D900A6E036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CE2E4F1A7D85D900A6E036 /* Images.xcassets */; };
+		16CE2E531A7D85D900A6E036 /* Optimist WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16CE2E361A7D85D800A6E036 /* Optimist WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,35 @@
 			remoteGlobalIDString = 161898A91A7CA1150084F2CE;
 			remoteInfo = Optimist;
 		};
+		16CE2E481A7D85D900A6E036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 161898A21A7CA1150084F2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CE2E451A7D85D900A6E036;
+			remoteInfo = "Optimist Watch App";
+		};
+		16CE2E511A7D85D900A6E036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 161898A21A7CA1150084F2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CE2E351A7D85D800A6E036;
+			remoteInfo = "Optimist WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16CE2E5A1A7D85D900A6E036 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				16CE2E531A7D85D900A6E036 /* Optimist WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		161898AA1A7CA1150084F2CE /* Optimist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optimist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +82,17 @@
 		161898D41A7CA8500084F2CE /* MoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		161898D61A7D637F0084F2CE /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		161898D81A7D6B530084F2CE /* SunBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunBar.swift; sourceTree = "<group>"; };
+		16CE2E361A7D85D800A6E036 /* Optimist WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Optimist WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CE2E381A7D85D800A6E036 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		16CE2E3C1A7D85D900A6E036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CE2E3D1A7D85D900A6E036 /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		16CE2E3E1A7D85D900A6E036 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		16CE2E401A7D85D900A6E036 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		16CE2E421A7D85D900A6E036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		16CE2E461A7D85D900A6E036 /* Optimist Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optimist Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CE2E4C1A7D85D900A6E036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CE2E4D1A7D85D900A6E036 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		16CE2E4F1A7D85D900A6E036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16CE2E331A7D85D800A6E036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE2E391A7D85D900A6E036 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +126,9 @@
 			children = (
 				161898AC1A7CA1150084F2CE /* Optimist */,
 				161898C51A7CA1150084F2CE /* OptimistTests */,
+				16CE2E3A1A7D85D900A6E036 /* Optimist WatchKit Extension */,
+				16CE2E4A1A7D85D900A6E036 /* Optimist Watch App */,
+				16CE2E371A7D85D800A6E036 /* Frameworks */,
 				161898AB1A7CA1150084F2CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +138,8 @@
 			children = (
 				161898AA1A7CA1150084F2CE /* Optimist.app */,
 				161898C21A7CA1150084F2CE /* OptimistTests.xctest */,
+				16CE2E361A7D85D800A6E036 /* Optimist WatchKit Extension.appex */,
+				16CE2E461A7D85D900A6E036 /* Optimist Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +187,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		16CE2E371A7D85D800A6E036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16CE2E381A7D85D800A6E036 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16CE2E3A1A7D85D900A6E036 /* Optimist WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16CE2E3E1A7D85D900A6E036 /* InterfaceController.swift */,
+				16CE2E401A7D85D900A6E036 /* NotificationController.swift */,
+				16CE2E421A7D85D900A6E036 /* Images.xcassets */,
+				16CE2E3B1A7D85D900A6E036 /* Supporting Files */,
+			);
+			path = "Optimist WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		16CE2E3B1A7D85D900A6E036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16CE2E3C1A7D85D900A6E036 /* Info.plist */,
+				16CE2E3D1A7D85D900A6E036 /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16CE2E4A1A7D85D900A6E036 /* Optimist Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				16CE2E4D1A7D85D900A6E036 /* Interface.storyboard */,
+				16CE2E4F1A7D85D900A6E036 /* Images.xcassets */,
+				16CE2E4B1A7D85D900A6E036 /* Supporting Files */,
+			);
+			path = "Optimist Watch App";
+			sourceTree = "<group>";
+		};
+		16CE2E4B1A7D85D900A6E036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16CE2E4C1A7D85D900A6E036 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +243,12 @@
 				161898A61A7CA1150084F2CE /* Sources */,
 				161898A71A7CA1150084F2CE /* Frameworks */,
 				161898A81A7CA1150084F2CE /* Resources */,
+				16CE2E5A1A7D85D900A6E036 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				16CE2E521A7D85D900A6E036 /* PBXTargetDependency */,
 			);
 			name = Optimist;
 			productName = Optimist;
@@ -165,6 +273,39 @@
 			productReference = 161898C21A7CA1150084F2CE /* OptimistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		16CE2E351A7D85D800A6E036 /* Optimist WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE2E591A7D85D900A6E036 /* Build configuration list for PBXNativeTarget "Optimist WatchKit Extension" */;
+			buildPhases = (
+				16CE2E321A7D85D800A6E036 /* Sources */,
+				16CE2E331A7D85D800A6E036 /* Frameworks */,
+				16CE2E341A7D85D800A6E036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CE2E491A7D85D900A6E036 /* PBXTargetDependency */,
+			);
+			name = "Optimist WatchKit Extension";
+			productName = "Optimist WatchKit Extension";
+			productReference = 16CE2E361A7D85D800A6E036 /* Optimist WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		16CE2E451A7D85D900A6E036 /* Optimist Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CE2E581A7D85D900A6E036 /* Build configuration list for PBXNativeTarget "Optimist Watch App" */;
+			buildPhases = (
+				16CE2E441A7D85D900A6E036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Optimist Watch App";
+			productName = "Optimist Watch App";
+			productReference = 16CE2E461A7D85D900A6E036 /* Optimist Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +321,12 @@
 					161898C11A7CA1150084F2CE = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 161898A91A7CA1150084F2CE;
+					};
+					16CE2E351A7D85D800A6E036 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					16CE2E451A7D85D900A6E036 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -198,6 +345,8 @@
 			targets = (
 				161898A91A7CA1150084F2CE /* Optimist */,
 				161898C11A7CA1150084F2CE /* OptimistTests */,
+				16CE2E351A7D85D800A6E036 /* Optimist WatchKit Extension */,
+				16CE2E451A7D85D900A6E036 /* Optimist Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +366,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE2E341A7D85D800A6E036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE2E471A7D85D900A6E036 /* Optimist Watch App.app in Resources */,
+				16CE2E431A7D85D900A6E036 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CE2E441A7D85D900A6E036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE2E4E1A7D85D900A6E036 /* Interface.storyboard in Resources */,
+				16CE2E501A7D85D900A6E036 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +412,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16CE2E321A7D85D800A6E036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CE2E411A7D85D900A6E036 /* NotificationController.swift in Sources */,
+				16CE2E3F1A7D85D900A6E036 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -252,6 +428,16 @@
 			isa = PBXTargetDependency;
 			target = 161898A91A7CA1150084F2CE /* Optimist */;
 			targetProxy = 161898C31A7CA1150084F2CE /* PBXContainerItemProxy */;
+		};
+		16CE2E491A7D85D900A6E036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CE2E451A7D85D900A6E036 /* Optimist Watch App */;
+			targetProxy = 16CE2E481A7D85D900A6E036 /* PBXContainerItemProxy */;
+		};
+		16CE2E521A7D85D900A6E036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CE2E351A7D85D800A6E036 /* Optimist WatchKit Extension */;
+			targetProxy = 16CE2E511A7D85D900A6E036 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Optimist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Optimist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +594,66 @@
 			};
 			name = Release;
 		};
+		16CE2E541A7D85D900A6E036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Optimist WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		16CE2E551A7D85D900A6E036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Optimist WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		16CE2E561A7D85D900A6E036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Optimist_WatchKit_Extension;
+				INFOPLIST_FILE = "Optimist Watch App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		16CE2E571A7D85D900A6E036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Optimist_WatchKit_Extension;
+				INFOPLIST_FILE = "Optimist Watch App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,12 +673,30 @@
 				161898CE1A7CA1150084F2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		161898CF1A7CA1150084F2CE /* Build configuration list for PBXNativeTarget "OptimistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				161898D01A7CA1150084F2CE /* Debug */,
 				161898D11A7CA1150084F2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CE2E581A7D85D900A6E036 /* Build configuration list for PBXNativeTarget "Optimist Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE2E561A7D85D900A6E036 /* Debug */,
+				16CE2E571A7D85D900A6E036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16CE2E591A7D85D900A6E036 /* Build configuration list for PBXNativeTarget "Optimist WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CE2E541A7D85D900A6E036 /* Debug */,
+				16CE2E551A7D85D900A6E036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

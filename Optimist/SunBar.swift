@@ -12,14 +12,16 @@ import CoreGraphics
 
 public class SunBar: UIView
 {
+    let STATUS_BAR_PADDING: CGFloat = 8.0
+    
     public override init(frame: CGRect)
     {
         super.init(frame: frame)
-        self.backgroundColor = UIColor(netHex:0xffda50)
+        self.backgroundColor = UIColor(netHex:0xffb242)
         
         let outerRingImage = UIImage(named: "outerRing")
         let outerRingImageView = UIImageView(image: outerRingImage)
-        outerRingImageView.frame = CGRect(x: self.frame.width / 2 - outerRingImageView.frame.width / 2, y: self.frame.height / 2 - outerRingImageView.frame.height / 2, width: outerRingImageView.frame.width, height: outerRingImageView.frame.height)
+        outerRingImageView.frame = CGRect(x: self.frame.width / 2 - outerRingImageView.frame.width / 2, y: self.frame.height / 2 - outerRingImageView.frame.height / 2 + STATUS_BAR_PADDING, width: outerRingImageView.frame.width, height: outerRingImageView.frame.height)
         self.addSubview(outerRingImageView)
         
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")

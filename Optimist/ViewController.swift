@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let SUN_BAR_HEIGHT: CGFloat = 64.0
+    let SUN_BAR_HEIGHT: CGFloat = 80.0
     let TEXT_AREA_HEIGHT: CGFloat = 50.0
 
     override func viewDidLoad() {
@@ -25,10 +25,6 @@ class ViewController: UIViewController {
         let sunBar = SunBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: SUN_BAR_HEIGHT))
         self.view.addSubview(sunBar)
         
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true;
     }
 
     override func didReceiveMemoryWarning() {
