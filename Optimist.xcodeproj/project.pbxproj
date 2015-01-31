@@ -14,6 +14,10 @@
 		161898BA1A7CA1150084F2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161898B91A7CA1150084F2CE /* Images.xcassets */; };
 		161898BD1A7CA1150084F2CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161898BB1A7CA1150084F2CE /* LaunchScreen.xib */; };
 		161898C91A7CA1150084F2CE /* OptimistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898C81A7CA1150084F2CE /* OptimistTests.swift */; };
+		161898D31A7CA21D0084F2CE /* MoodButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D21A7CA21D0084F2CE /* MoodButton.swift */; };
+		161898D51A7CA8500084F2CE /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D41A7CA8500084F2CE /* MoodView.swift */; };
+		161898D71A7D637F0084F2CE /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D61A7D637F0084F2CE /* HexColor.swift */; };
+		161898D91A7D6B530084F2CE /* SunBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161898D81A7D6B530084F2CE /* SunBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		161898C21A7CA1150084F2CE /* OptimistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptimistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161898C71A7CA1150084F2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161898C81A7CA1150084F2CE /* OptimistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimistTests.swift; sourceTree = "<group>"; };
+		161898D21A7CA21D0084F2CE /* MoodButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodButton.swift; sourceTree = "<group>"; };
+		161898D41A7CA8500084F2CE /* MoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		161898D61A7D637F0084F2CE /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		161898D81A7D6B530084F2CE /* SunBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 			children = (
 				161898AF1A7CA1150084F2CE /* AppDelegate.swift */,
 				161898B41A7CA1150084F2CE /* ViewController.swift */,
+				161898D81A7D6B530084F2CE /* SunBar.swift */,
+				161898D61A7D637F0084F2CE /* HexColor.swift */,
+				161898D41A7CA8500084F2CE /* MoodView.swift */,
+				161898D21A7CA21D0084F2CE /* MoodButton.swift */,
 				161898B61A7CA1150084F2CE /* Main.storyboard */,
 				161898B91A7CA1150084F2CE /* Images.xcassets */,
 				161898BB1A7CA1150084F2CE /* LaunchScreen.xib */,
@@ -216,8 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				161898B51A7CA1150084F2CE /* ViewController.swift in Sources */,
+				161898D71A7D637F0084F2CE /* HexColor.swift in Sources */,
+				161898D91A7D6B530084F2CE /* SunBar.swift in Sources */,
 				161898B31A7CA1150084F2CE /* Optimist.xcdatamodeld in Sources */,
+				161898D31A7CA21D0084F2CE /* MoodButton.swift in Sources */,
 				161898B01A7CA1150084F2CE /* AppDelegate.swift in Sources */,
+				161898D51A7CA8500084F2CE /* MoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
