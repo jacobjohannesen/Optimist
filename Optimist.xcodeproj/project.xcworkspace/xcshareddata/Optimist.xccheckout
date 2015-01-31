@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0336CAA9-E5D4-41DE-883A-C11C80D8DE5F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Optimist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CF4874AE1BFA50FC0D92A197CA138C17B45C191E</key>
+		<string>https://github.com/jacobjohannesen/Optimist.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Optimist.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CF4874AE1BFA50FC0D92A197CA138C17B45C191E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jacobjohannesen/Optimist.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CF4874AE1BFA50FC0D92A197CA138C17B45C191E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CF4874AE1BFA50FC0D92A197CA138C17B45C191E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Optimist</string>
+		</dict>
+	</array>
+</dict>
+</plist>
