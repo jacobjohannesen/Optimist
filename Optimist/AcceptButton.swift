@@ -1,8 +1,8 @@
 //
-//  MoodButton.swift
+//  AcceptButton.swift
 //  Optimist
 //
-//  Created by Jacob Johannesen on 1/30/15.
+//  Created by Jacob Johannesen on 1/31/15.
 //  Copyright (c) 2015 MonsterCreate. All rights reserved.
 //
 
@@ -10,21 +10,19 @@ import Foundation
 import UIKit
 import CoreGraphics
 
-public class MoodButton: UIButton
+public class AcceptButton: UIButton
 {
     let DEFAULT_HEIGHT: CGFloat = 36.0
     let DEFAULT_BUTTON_OPACITY: CGFloat = 0.0
     let DEFAULT_BUTTON_OPACITY_TAPPED: CGFloat = 1.0
     
-    var color: UIColor = UIColor(netHex:0xffb242)
-    var index: Int
+    var color: UIColor = UIColor(netHex:0x64bf6b)
     var moodView: MoodView
     
-    public init(width: CGFloat, title: String, moodView: MoodView, index: Int)
+    public init(width: CGFloat, title: String, moodView: MoodView)
     {
         let frame = CGRectMake(0, 0, width, DEFAULT_HEIGHT)
         self.moodView = moodView
-        self.index = index
         
         super.init(frame: frame)
         
@@ -33,12 +31,12 @@ public class MoodButton: UIButton
         
         self.clipsToBounds = true
         self.layer.cornerRadius = DEFAULT_HEIGHT/2
-        self.layer.borderColor = UIColor(netHex:0xffb242).CGColor
+        self.layer.borderColor = UIColor(netHex:0x64bf6b).CGColor
         self.layer.borderWidth = 2.0
         self.adjustsImageWhenHighlighted = false
         
         self.setTitle(title, forState: UIControlState.Normal)
-        self.setTitleColor(UIColor(netHex:0xffb242), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor(netHex:0x64bf6b), forState: UIControlState.Normal)
         self.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin
         
         self.addTarget(self, action: "touchDown", forControlEvents: UIControlEvents.TouchDown)
@@ -49,41 +47,33 @@ public class MoodButton: UIButton
     public func changeColor(color: UIColor)
     {
         self.color = color
-        self.setTitleColor(UIColor(netHex:0xffb242), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor(netHex:0x4bf6b), forState: UIControlState.Normal)
         self.backgroundColor = self.color.colorWithAlphaComponent(DEFAULT_BUTTON_OPACITY)
     }
     
     public func touchDown()
     {
         self.backgroundColor = self.color.colorWithAlphaComponent(DEFAULT_BUTTON_OPACITY_TAPPED)
-        self.setTitleColor(UIColor(netHex:0xfffdd7), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         println("button tapped")
     }
     
     public func touchUpInside()
     {
+        UIView.animateWithDuration(0.5, animations:
+            {
+                self.backgroundColor = self.color.colorWithAlphaComponent(self.DEFAULT_BUTTON_OPACITY)
+                self.setTitleColor(UIColor(netHex:0x4bf6b), forState: UIControlState.Normal)
+        })
         
-        //set MoodView array
-        if(moodView.booleanArr[index] == true)
-        {
-             moodView.booleanArr[index] = false
-            
-            UIView.animateWithDuration(0.5, animations:
-                {
-                    self.backgroundColor = self.color.colorWithAlphaComponent(self.DEFAULT_BUTTON_OPACITY)
-                    self.setTitleColor(UIColor(netHex:0xffb242), forState: UIControlState.Normal)
-            })
-        }
-        else
-        {
-            moodView.booleanArr[index] = true
-        }
+        //print MoodView array
+        moodView.printBooleans()
     }
     
     public func touchUpOutside()
     {
         self.backgroundColor = self.color.colorWithAlphaComponent(DEFAULT_BUTTON_OPACITY)
-        self.setTitleColor(UIColor(netHex:0xffb242), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor(netHex:0x4bf6b), forState: UIControlState.Normal)
     }
     
     public required init(coder: NSCoder) {

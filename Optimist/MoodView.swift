@@ -22,12 +22,16 @@ public class MoodView: UIView
     var texts8: [String] = ["stressed", "nervous"];
     var texts9: [String] = ["sulky", "worthless"];
     
+    var booleanArr: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    
     let DEFAULT_HEIGHT: CGFloat = 36.0
     let DEFAULT_WIDTH: CGFloat = 150.0
     let DEFAULT_MAX_WIDTH: CGFloat = 400.0
     let NUM_LINES: Int = 9;
     let DEFAULT_PADDING: CGFloat = 10.0
     let TEXT_SCALING_FACTOR: CGFloat = 18.0
+    
+    var trackIndex: Int = 0;
     
     public override init(frame: CGRect)
     {
@@ -68,15 +72,25 @@ public class MoodView: UIView
         {
             let dynamicButtonWidth = calculateWidth(texts[index])
             
-            let moodButton = MoodButton(width: dynamicButtonWidth, title: texts[index]);
+            let moodButton = MoodButton(width: dynamicButtonWidth, title: texts[index], moodView: self, index: trackIndex);
             moodButton.frame = CGRect(x: totalLengthUsed, y: 0, width: moodButton.frame.width, height: moodButton.frame.height);
             
             lineView.addSubview(moodButton);
             
             totalLengthUsed = totalLengthUsed + DEFAULT_PADDING + dynamicButtonWidth;
+            
+            trackIndex++;
         }
         
         return lineView;
+    }
+    
+    func printBooleans()
+    {
+        for element in booleanArr
+        {
+            println("boolean is \(element)")
+        }
     }
     
     func calculateWidth(thisText: String) -> CGFloat

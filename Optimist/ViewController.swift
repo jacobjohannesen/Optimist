@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     let SUN_BAR_HEIGHT: CGFloat = 80.0
     let TEXT_AREA_HEIGHT: CGFloat = 50.0
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(netHex:0xfffdd7)
@@ -25,6 +26,9 @@ class ViewController: UIViewController {
         let sunBar = SunBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: SUN_BAR_HEIGHT))
         self.view.addSubview(sunBar)
         
+        let acceptButton = AcceptButton(width: 200, title: "Accept", moodView: moodView)
+        acceptButton.frame = CGRect(x: self.view.frame.width / 2 - acceptButton.frame.width / 2, y: self.view.frame.height - 64, width: acceptButton.frame.width, height: acceptButton.frame.height)
+        self.view.addSubview(acceptButton)
     }
 
     override func didReceiveMemoryWarning() {
