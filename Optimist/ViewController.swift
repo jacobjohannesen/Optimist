@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let SUN_BAR_HEIGHT: CGFloat = 80.0
-    let TEXT_AREA_HEIGHT: CGFloat = 50.0
+    let TEXT_AREA_HEIGHT: CGFloat = 100.0
 
     override func viewDidLoad()
     {
@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         let acceptButton = AcceptButton(width: 200, title: "Accept", moodView: moodView)
         acceptButton.frame = CGRect(x: self.view.frame.width / 2 - acceptButton.frame.width / 2, y: self.view.frame.height - 64, width: acceptButton.frame.width, height: acceptButton.frame.height)
         self.view.addSubview(acceptButton)
+        
+        let textArea = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: TEXT_AREA_HEIGHT))
     }
 
     override func didReceiveMemoryWarning() {

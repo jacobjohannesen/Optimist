@@ -12,9 +12,9 @@ import CoreGraphics
 
 public class AcceptButton: UIButton
 {
-    let DEFAULT_HEIGHT: CGFloat = 36.0
-    let DEFAULT_BUTTON_OPACITY: CGFloat = 0.0
-    let DEFAULT_BUTTON_OPACITY_TAPPED: CGFloat = 1.0
+    let DEFAULT_HEIGHT: CGFloat = 50.0
+    let DEFAULT_BUTTON_OPACITY: CGFloat = 1.0
+    let DEFAULT_BUTTON_OPACITY_TAPPED: CGFloat = 0.0
     
     var color: UIColor = UIColor(netHex:0x64bf6b)
     var moodView: MoodView
@@ -36,7 +36,7 @@ public class AcceptButton: UIButton
         self.adjustsImageWhenHighlighted = false
         
         self.setTitle(title, forState: UIControlState.Normal)
-        self.setTitleColor(UIColor(netHex:0x64bf6b), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         self.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin
         
         self.addTarget(self, action: "touchDown", forControlEvents: UIControlEvents.TouchDown)
@@ -54,7 +54,7 @@ public class AcceptButton: UIButton
     public func touchDown()
     {
         self.backgroundColor = self.color.colorWithAlphaComponent(DEFAULT_BUTTON_OPACITY_TAPPED)
-        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor(netHex:0x4bf6b), forState: UIControlState.Normal)
         println("button tapped")
     }
     
@@ -63,7 +63,7 @@ public class AcceptButton: UIButton
         UIView.animateWithDuration(0.5, animations:
             {
                 self.backgroundColor = self.color.colorWithAlphaComponent(self.DEFAULT_BUTTON_OPACITY)
-                self.setTitleColor(UIColor(netHex:0x4bf6b), forState: UIControlState.Normal)
+                self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         })
         
         //print MoodView array
